@@ -1,16 +1,16 @@
 # Apache Shiro 网站概述
 
-The Apache Shiro website is a static content website accessible at http://shiro.apache.org
+Apache Shiro 是一个可以访问的静态网站，网址是：http://shiro.apache.org
 
-Site content is authored as Markdown and HTML files.  These files are scanned by a tool that applies a page template to each file's contents as necessary, and the rendered static .html files are output to a `publish` directory.
+网站内容使用 Markdown 和 HTML 编写。这些文件经过一个工具扫描后，这个工具根据需要将页面模板应用到每一个被扫描的文件的内容，并将呈现的静态.html文件输出到'publish'目录。
 
-Publishing site changes is as simple as committing any changes in the `publish` directory to version control.  ASF infrastructure will see the commit and automatically push the changes to the ASF's production webservers.
+使用这个工具发布网站更改的内容就像是在`publish`目录提交任何内容来进行版本控制一样简单。ASF基础架构将看到提交并自动将更改推送到ASF的产品Web服务器。
 
-## Generating and Publishing
+## 生成和发布
 
-The tool used to generate the static content is [SCMS](https://github.com/lhazlewood/scms).  Once scms is installed and in your `$PATH`, generating and publishing the site on the command line is easy.
+这个用于生成静态内容的工具是 [SCMS](https://github.com/lhazlewood/scms).  一旦scms被安装并且在你电脑的`$ PATH`中, 在命令行生成和发布网站是很容易的。
  
-The following example assumes you have SVN commit permissions to the `publish` directory, typically because your are an Apache Shiro project committer:
+下面的例子假设你拥有对`publish`目录的SVN提交权限，通常是因为你是一个Apache Shiro项目提交者：
     
     cd site
     # This next command will take a few seconds, be patient :)
